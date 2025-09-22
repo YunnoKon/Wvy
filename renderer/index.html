@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+window.ipcRenderer.on("pang", (data) => {
+  console.log("renderer got pong with:", data);
+  alert("Received pong: " + data.hello);
+});
+</script>
+<body>
+    <h1>External Css Stylesheet is used for this testing!!!</h1>
+    <p>Random albert einstein picture</p>
+    <img src="./test.jpg"></img>
+    <button onclick="window.myApi.ping()">bussin</button>
+</body>
+</html> 

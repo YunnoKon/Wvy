@@ -1,0 +1,12 @@
+{
+    "tasks": {
+        "dev":"deno bundle --minify index.ts > index.js && deno --allow-write --allow-run --allow-read --allow-net=github.com index.js"
+    },
+    "imports": {
+        "@std/encoding": "jsr:@std/encoding@^1.0.10",
+        "@std/fs": "jsr:@std/fs@^1.0.19",
+        "@std/msgpack": "jsr:@std/msgpack@^1.0.3",
+        "@std/path": "jsr:@std/path@^1.1.2",
+        "@std/text": "jsr:@std/text@^1.0.16"
+    }
+}
